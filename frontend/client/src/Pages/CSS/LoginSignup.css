@@ -1,0 +1,80 @@
+/* Styles de base */
+.loginsignup {
+    width: 100%;
+    height: 80vh;
+    padding-top: 100px;
+    margin: auto;
+  /* ou position: absolute; */
+    top: -0px; 
+}
+
+.loginsignup-container {
+    width: 580px;
+    height: 600px;
+    margin: auto;
+    padding: 40px 60px;
+    background: #fce3fe;
+}
+
+.loginsignup-container h1 {
+    margin: 60px 0px;
+}
+
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.loginsignup-fields input {
+    height: 50px; /* Ajuster la hauteur pour les écrans mobiles */
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.loginsignup-container button {
+    width: 100%; /* Remplacer la largeur pour les écrans mobiles */
+    height: 50px; /* Ajuster la hauteur pour les écrans mobiles */
+    color: white;
+    background: #ff4141;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Media Query pour les écrans de taille moyenne */
+@media only screen and (max-width: 768px) {
+    .loginsignup-container {
+        width: 80%;
+        padding: 20px;
+    }
+    
+    .loginsignup-fields input {
+        height: 60px; /* Ajuster la hauteur pour les écrans de taille moyenne */
+        padding-left: 10px; /* Ajuster le padding pour les écrans de taille moyenne */
+    }
+    .loginsignup-login{
+        margin-top: 20px;
+        color: #5c5c5c;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .loginsignup-login span{
+        color: #ff4141;
+        font-weight: 500;
+    }
+    .loginsignup-agree {
+        display: flex;
+        align-items: center;
+
+    }
+}

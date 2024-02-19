@@ -1,0 +1,80 @@
+/* Style par défaut pour toutes les tailles d'écran */
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20; */
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 85px;
+    font-weight: 600;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.hero-hand-icon img {
+    width: 85px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+}
+
+.hero-img {
+    /* position: absolute;
+    top: 40px;
+    z-index: 1;
+    right: 30px; */
+    width: 450px;
+}
+
+/* Media queries pour les écrans de taille moyenne à grande (par exemple, largeur d'écran supérieure à 768 pixels) */
+@media only screen and (max-width: 768px) {
+    .hero-left {
+        padding-left: 20px; /* Ajuster le padding pour les petits écrans */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .hero-left p {
+        font-size: 48px; /* Ajuster la taille de la police pour les petits écrans */
+    }
+
+    .hero-img {
+        width: 90%; /* Faire en sorte que l'image occupe la largeur totale pour les petits écrans */
+        margin-top: -20px; /* Ajouter une marge en haut pour l'image */
+    }
+}

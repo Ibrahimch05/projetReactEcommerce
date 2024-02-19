@@ -1,0 +1,131 @@
+.productdisplay {
+    display: flex;
+    margin: 0 170px;
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 17px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productdisplay-img-list img {
+    height: 163px;
+}
+
+.productdisplay-main-img {
+    width: 586px;
+    height: 700px;
+}
+
+.productdisplay-right {
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 5px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 40px 0;
+    gap: 30px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+    text-decoration: line-through;
+}
+
+/* Section de sélection de la taille */
+.productdisplay-right-size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productdisplay-right-size h1 {
+    margin-bottom: 10px;
+    color: #656565;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    gap: 20px;
+}
+
+/* Styles communs pour les différentes tailles */
+.productdisplay-right-sizes div {
+    flex: 1;
+    padding: 18px 24px;
+    background: #fbfbfb;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Styles spécifiques pour le bouton Ajouter au panier */
+.kip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin-top: 400px;
+    margin-bottom: auto;
+    font: fallback;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Section des avis */
+.productdisplay-review {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    color: #656565;
+}
+
+.productdisplay-review span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.productdisplay-review p {
+    margin: 5px 0;
+    margin-bottom: -40;
+}
+

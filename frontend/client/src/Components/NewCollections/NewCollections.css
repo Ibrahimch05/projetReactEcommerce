@@ -1,0 +1,56 @@
+/* Ajoutez ces styles à votre fichier CSS */
+
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Ajuster la hauteur automatiquement pour s'adapter au contenu */
+    position: relative; /* Ajout de position relative pour le positionnement absolu */
+    
+}
+
+
+.wip{
+    position: absolute;
+    top: 1950px;
+    
+}
+
+.new-collections hr {
+    width: 100%; /* Ajustement pour occuper la largeur complète du conteneur parent */
+    height: 6px;
+    border-radius: 10px;
+    background-color: #252525;
+}
+
+.collections {
+    display: flex;
+    flex-wrap: wrap; /* Permettre le passage à la ligne des éléments */
+    justify-content: space-between; /* Espacement équitable entre les éléments horizontaux */
+    margin-top: 70px;
+}
+
+.collections-item {
+    flex: 0 1 calc(25% - 20px); /* Ajuster la largeur pour 4 éléments par ligne avec une marge de 20px entre eux */
+    max-width: calc(25% - 20px); /* Limiter la largeur maximale pour éviter l'étirement excessif */
+    margin: 10px; /* Ajouter une marge entre les éléments */
+}
+
+/* Media queries pour les écrans de taille moyenne à grande (par exemple, largeur d'écran supérieure à 968 pixels) */
+@media only screen and (max-width: 768px) {
+    .new-collections h1 {
+        font-size: 2rem; /* Ajustement de la taille de la police pour les écrans plus petits */
+        position: static; /* Retirer le positionnement absolu */
+        transform: none; /* Réinitialiser la transformation */
+    }
+
+    .collections {
+        justify-content: center; /* Centrer les éléments horizontalement pour les écrans plus petits */
+    }
+
+    .collections-item {
+        flex: 0 1 calc(50% - 20px); /* Ajuster la largeur pour 2 éléments par ligne avec une marge de 20px entre eux */
+        max-width: calc(50% - 20px); /* Limiter la largeur maximale pour éviter l'étirement excessif */
+    }
+}

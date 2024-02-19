@@ -1,0 +1,41 @@
+/* Style par défaut pour toutes les tailles d'écran */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media queries pour les écrans de taille moyenne à grande (par exemple, largeur d'écran supérieure à 768 pixels) */
+@media only screen and (max-width: 768px) {
+    .popular {
+        height: auto; /* Ajuster la hauteur automatiquement pour s'adapter au contenu */
+    }
+
+    .popular-item {
+        flex-direction: column; /* Changer la direction des éléments pour une disposition en colonne */
+        align-items: center; /* Centrer les éléments */
+        text-align: center; /* Centrer le texte */
+        margin-top: 20px; /* Réduire la marge en haut */
+    }
+}
