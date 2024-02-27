@@ -6,13 +6,13 @@ const {
   getMessage,
   updateMessage,
   showAllMessages,
-  dealOfMessage,
+  dealOfMessage
 } = require("../controllers/message");
 
-router.post("/add", addMessage);
-router.put("/update/:id", updateMessage);
-router.get("/all", showAllMessages);
-router.get("/get/:id", getMessage);
-router.delete("/deleteMessage/:id", dealOfMessage);
+router.post("/", addMessage);
+router.put("/:id", updateMessage);
+router.get("/", showAllMessages);
+router.get("/:id", getMessage);
+router.delete("/dealOfMessage/:id", dealOfMessage);
 
 module.exports = router;

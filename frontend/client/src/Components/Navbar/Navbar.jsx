@@ -51,7 +51,7 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to='/login'><button>Se connecter</button></Link>
+        <Link to='/login'><button>Se connecter </button></Link>
         <Link to='/cart'><img src={cart_icon} alt="" /></Link>
         <div className="nav-cart-count">0</div>
       </div>
